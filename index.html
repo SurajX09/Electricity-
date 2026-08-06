@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Cut Calculator</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Language Switch -->
+    <div class="language-switch">
+
+        <button
+            id="englishBtn"
+            class="lang-btn active">
+            English
+        </button>
+
+        <button
+            id="marathiBtn"
+            class="lang-btn">
+            मराठी
+        </button>
+
+    </div>
+
+    <!-- Card -->
+
+    <div class="card">
+
+        <h1 id="title">
+            Power Cut Calculator
+        </h1>
+
+        <p id="subtitle">
+            Calculate total power outage duration instantly.
+        </p>
+
+        <!-- Start Time -->
+
+        <div class="time-section">
+
+            <label id="startLabel">
+                Power Cut Start Time
+            </label>
+
+            <div class="time-grid">
+
+                <!-- Hour -->
+
+                <div class="field">
+
+                    <label id="hour1Label">
+                        Hour
+                    </label>
+
+                    <select id="startHour">
+
+                    </select>
+
+                </div>
+
+                <!-- Minute -->
+
+                <div class="field">
+
+                    <label id="minute1Label">
+                        Minute
+                    </label>
+
+                    <select id="startMinute">
+
+                    </select>
+
+                </div>
+
+                <!-- AM PM -->
+
+                <div class="field">
+
+                    <label id="ampm1Label">
+                        AM / PM
+                    </label>
+
+                    <select id="startPeriod">
+
+                        <option value="">Select</option>
+
+                        <option value="AM">
+                            AM
+                        </option>
+
+                        <option value="PM">
+                            PM
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- End Time -->
+
+        <div class="time-section">
+
+            <label id="endLabel">
+                Power Restored Time
+            </label>
+
+            <div class="time-grid">
+
+                <!-- Hour -->
+
+                <div class="field">
+
+                    <label id="hour2Label">
+                        Hour
+                    </label>
+
+                    <select id="endHour">
+
+                    </select>
+
+                </div>
+
+                <!-- Minute -->
+
+                <div class="field">
+
+                    <label id="minute2Label">
+                        Minute
+                    </label>
+
+                    <select id="endMinute">
+
+                    </select>
+
+                </div>
+
+                <!-- AM PM -->
+
+                <div class="field">
+
+                    <label id="ampm2Label">
+                        AM / PM
+                    </label>
+
+                    <select id="endPeriod">
+
+                        <option value="">Select</option>
+
+                        <option value="AM">
+                            AM
+                        </option>
+
+                        <option value="PM">
+                            PM
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Error -->
+
+        <div
+            id="error"
+            class="error">
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button
+                id="calculateBtn"
+                class="primary-btn">
+
+                Calculate
+
+            </button>
+
+            <button
+                id="resetBtn"
+                class="secondary-btn">
+
+                Reset
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Result -->
+
+    <div
+        id="resultCard"
+        class="result-card hidden">
+
+        <h2 id="resultTitle">
+            Total Power Cut Duration
+        </h2>
+
+        <h3 id="result">
+
+            0 Hour
+
+        </h3>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+
+        Made with FEBO-CT
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
